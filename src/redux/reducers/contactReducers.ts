@@ -1,0 +1,56 @@
+import { ContactItem } from '@interfaces/contact.interface';
+import { ItemOrganization } from '@interfaces/dashboard.interface';
+import { ParamsMethodGetContactModel, ParamsMethodGetLeadModel } from '@interfaces/params.interface';
+import actionTypes from '../actionTypes';
+
+export interface ContactReducers {
+  arrContact: ContactItem[];
+  type: string;
+  filter: ParamsMethodGetContactModel;
+  errorMessage: string;
+  totalCount: number;
+  currentOrganization: ItemOrganization | null;
+}
+
+const initialState: ContactReducers = {
+  arrContact: [],
+  type: '',
+  filter: {
+    OrganizationUnitId: '641a808f-e24b-4241-a177-c3c7a6cc602f', //todo
+    filterType: 0,
+    filter: '[]',
+  },
+  errorMessage: '',
+  totalCount: 0,
+  currentOrganization: null,
+};
+export default (state = initialState, action: any) => {
+  state.type = action.type;
+  switch (action.type) {
+    case actionTypes.GET_DATA_LIST_CONTACT_FAILED:
+      return {
+        ...state,
+        errorMessage: action.error,
+      };
+    case actionTypes.FILTER_lIST_CONTACT:
+      return {
+        ...state,
+        filter: {
+          OrganizationUnitId: action.body.organizationItem.id,
+          filterType: action.body.filterType,
+          filter: action.body.filter,
+        },
+        currentOrganization: action.body.organizationItem,
+        errorMessage: '',
+      };
+    case actionTypes.GET_DATA_LIST_CONTACT_SUCCESS:
+      return {
+        ...state,
+        arrContact: action.response.listData,
+        errorMessage: '',
+        totalCount: action.response.total,
+      };
+    default:
+      return state;
+  }
+};

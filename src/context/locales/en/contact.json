@@ -1,0 +1,12 @@
+{
+    "all": "All",
+    "recent_call": "Recent Calls",
+    "missed_call": "Missed Calls",
+    "contact_title": "Contact",
+    "history_call": "History Calls",
+    "phone": "Phone",
+    "calling": "Calling...",
+    "depature_call": "Cuộc gọi đến",
+    "arrival_call": "Cuộc gọi đi",
+    "cancelled_call": "Cancelled Call"
+}

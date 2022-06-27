@@ -1,0 +1,18 @@
+
+
+
+import React, { FC, memo } from 'react';
+import Svg, { Path } from 'react-native-svg';
+import { MyIconProps, useMyIconUtils } from '@components/Icon/until';
+
+const PriceActivity: FC<MyIconProps> = (props) => {
+    const { modifyProps } = useMyIconUtils(props);
+    return (
+        <Svg width="14" height="18" viewBox="0 0 14 18" {...modifyProps} fill="none">
+            <Path d="M8.66536 0.664062H1.9987C1.08203 0.664062 0.332031 1.41406 0.332031 2.33073V15.6641C0.332031 16.5807 1.08203 17.3307 1.9987 17.3307H11.9987C12.9154 17.3307 13.6654 16.5807 13.6654 15.6641V5.66406L8.66536 0.664062ZM1.9987 15.6641V2.33073H7.83203V5.66406H11.9987V15.6641H1.9987ZM6.16536 14.8307H7.83203V13.9974H8.66536C9.1237 13.9974 9.4987 13.6224 9.4987 13.1641V10.6641C9.4987 10.2057 9.1237 9.83073 8.66536 9.83073H6.16536V8.9974H9.4987V7.33073H7.83203V6.4974H6.16536V7.33073H5.33203C4.8737 7.33073 4.4987 7.70573 4.4987 8.16406V10.6641C4.4987 11.1224 4.8737 11.4974 5.33203 11.4974H7.83203V12.3307H4.4987V13.9974H6.16536V14.8307Z" fill="#3B7DE3" />
+
+        </Svg>
+    );
+};
+
+export default memo(PriceActivity);

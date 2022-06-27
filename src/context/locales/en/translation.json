@@ -1,0 +1,9 @@
+{
+  "forgot_password": "Forgot Password",
+  "reset_password": "Reset password",
+  "create_new_password": "Create new password",
+  "noteAppointment": "*Các số liệu trên được ghi nhận từ cuộc hẹn đã hoàn thành",
+  "monthYearFormat": "T[h]g MM YYYY",
+  "dateTimeFormat": "HH giờ mm p[h]út ss giây",
+  "dateTimeCallFormat": "{{hours, string}} giờ {{minute, string}} phút {{seconds, string}}  giây"
+}

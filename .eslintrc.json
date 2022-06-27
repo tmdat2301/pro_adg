@@ -1,0 +1,58 @@
+{
+  "root": true,
+  "extends": "@react-native-community",
+  "plugins": ["@typescript-eslint"],
+  "globals": { "HermesInternal": true },
+  "rules": {
+    "no-var": "error",
+    "prefer-const": "warn",
+    "max-params": ["warn", 4],
+    "comma-dangle": ["off", "always-multiline"],
+    "react-native/no-inline-styles": "off",
+    "prettier/prettier": ["warn", {}, { "usePrettierrc": true }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-shadow": "off",
+    "react/jsx-no-undef": ["off", { "allowGlobals": true }]
+
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint", "@typescript-eslint/eslint-plugin"],
+      "extends": ["prettier/@typescript-eslint", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
+      "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./",
+        "sourceType": "module"
+      },
+      "rules": {
+        "no-unused-vars": "off",
+        "@typescript-eslint/prefer-literal-enum-member": "error",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "vars": "all",
+            "args": "none",
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "require-await": "off",
+        "@typescript-eslint/require-await": "off"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "lessThan": "Nhỏ hơn",
+    "greaterThan": "Lớn hơn",
+    "lessThanEqual": "Bé hơn hoặc bằng",
+    "greaterThanEqual": "Lớn hơn hoặc bằng",
+    "fromTo": "Trong khoảng",
+    "fromToWithEqual": "Trong đoạn",
+    "defaultValue": "Tuỳ chọn",
+    "yesterday":"Hôm qua",
+    "toDay":"Hôm nay",
+    "thisWeek":"Tuần này",
+    "previousWeek":"Tuần trước",
+    "thisMonth":"Tháng này",
+    "previousMonth":"Tháng trước",
+    "custom":"Tùy chọn"
+}

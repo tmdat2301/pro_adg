@@ -1,0 +1,14 @@
+import React, { FC, memo } from 'react';
+import Svg, { Path } from 'react-native-svg';
+import { MyIconProps, useMyIconUtils } from '@components/Icon/until';
+
+const ArrowCalled: FC<MyIconProps> = (props) => {
+  const { modifyProps } = useMyIconUtils(props);
+  return (
+    <Svg width="19" height="16" viewBox="0 0 19 16" {...modifyProps} fill="none">
+      <Path d="M1.05413 6.65411H14.5002C14.5026 6.65411 14.5049 6.64943 14.5026 6.64943L9.43069 1.77443C9.02053 1.38068 9.00647 0.726769 9.40256 0.316613C9.79631 -0.0935431 10.4502 -0.107606 10.8604 0.288488L17.7674 6.92599C17.969 7.12052 18.0838 7.39005 18.0838 7.66896C18.0838 7.95021 17.969 8.21739 17.7674 8.41193L10.8229 15.0846C10.6237 15.2768 10.3658 15.3729 10.108 15.3729C9.83616 15.3729 9.56663 15.2674 9.36506 15.0565C8.97131 14.6463 8.98303 13.9924 9.39319 13.5986L14.4651 8.72364C14.4674 8.7213 14.4651 8.71896 14.4627 8.71896H1.03069C0.48225 8.71896 0.0345941 8.29005 0.00178164 7.75099C-0.0333746 7.15099 0.456469 6.65411 1.05413 6.65411Z" fill="#34B576" {...modifyProps} />
+    </Svg>
+  );
+};
+
+export default memo(ArrowCalled);

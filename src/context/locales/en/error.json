@@ -1,0 +1,20 @@
+{
+  "login_false": "Đăng nhập thất bại",
+  "domain_undefined": "Tên miền không tồn tại",
+  "can_not_open_URL": "Không thể mở được link đăng nhập, thử lại sau",
+  "filter_validate":"filter content is not empty",
+  "date_start":"Date start is not empty",
+  "date_end":"Date end is not empty",
+  "type_number_err":"Enter number values",
+  "max_100_string":"value exceeds 100 characters",
+  "email_wrong_format":"Email is wrong format",
+  "some_thing_wrong": "Đã có lỗi xảy ra, hãy thử lại sau",
+  "reject_call": "Cuộc gọi bị huỷ, gọi lại sau",
+  "audio_error": "File ghi âm lỗi",
+  "save_filter_success":"Lưu bộ lọc thành công",
+  "no_permission":"Bạn không có quyền thực hiện thao tác này",
+  "phone_wrong_format":"Sai định dạng số điện thoại",
+  "no_access": "Không có quyền truy cập",
+  "no_access_content": "Bạn không có quyền truy cập tính năng này. Vui lòng liên hệ admin để được cấp quyền.",
+  "understand": "Tôi đã hiểu!"
+}

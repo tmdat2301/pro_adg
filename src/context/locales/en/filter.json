@@ -1,0 +1,17 @@
+{
+    "lessThan": "Less than",
+    "greaterThan": "Greater than",
+    "lessThanEqual": "Less than or Equal",
+    "greaterThanEqual": "Greater than",
+    "fromTo": "In range",
+    "fromToWithEqual": "In segment",
+    "defaultValue": "Option",
+    "yesterday":"Yesterday",
+    "toDay":"To Day",
+    "thisWeek":"This week",
+    "previousWeek":"Previous week",
+    "this month":"This month",
+    "previousMonth":"Previous month",
+    "custom":"Custom"
+
+}

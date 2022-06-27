@@ -1,0 +1,6 @@
+{
+    "filterContent": "Nội dung lọc không được để trống",
+    "filterInrange": "Bắt đầu, kết thúc không được để trống",
+    "filterChoice": "Vui lòng chọn ít nhất 1 giá trị",
+    "required_filter_name":"Tên bộ lọc không được bỏ trống"
+}

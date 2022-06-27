@@ -1,0 +1,6 @@
+{
+    "filterContent": "Filter content can't be empty",
+    "filterInrange": "Start, end can't be empty",
+    "filterChoice": "Please choose at least one option",
+    "required_filter_name":"Filter name is not empty"
+}

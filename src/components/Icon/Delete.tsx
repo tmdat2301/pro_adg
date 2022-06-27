@@ -1,0 +1,18 @@
+import React, { FC, memo } from 'react';
+import Svg, { Path, Rect } from 'react-native-svg';
+import { MyIconProps, useMyIconUtils } from '@components/Icon/until';
+
+const Close: FC<MyIconProps> = (props) => {
+  const { modifyProps } = useMyIconUtils(props);
+  return (
+    <Svg width="16" height="16" viewBox="0 0 12 13" fill="none">
+      <Path
+        d="M3.625 1.37354H3.5C3.56875 1.37354 3.625 1.31729 3.625 1.24854V1.37354H8.375V1.24854C8.375 1.31729 8.43125 1.37354 8.5 1.37354H8.375V2.49854H9.5V1.24854C9.5 0.696973 9.05156 0.248535 8.5 0.248535H3.5C2.94844 0.248535 2.5 0.696973 2.5 1.24854V2.49854H3.625V1.37354ZM11.5 2.49854H0.5C0.223438 2.49854 0 2.72197 0 2.99854V3.49854C0 3.56729 0.05625 3.62354 0.125 3.62354H1.06875L1.45469 11.7954C1.47969 12.3282 1.92031 12.7485 2.45313 12.7485H9.54688C10.0813 12.7485 10.5203 12.3298 10.5453 11.7954L10.9313 3.62354H11.875C11.9438 3.62354 12 3.56729 12 3.49854V2.99854C12 2.72197 11.7766 2.49854 11.5 2.49854ZM9.42656 11.6235H2.57344L2.19531 3.62354H9.80469L9.42656 11.6235Z"
+        fill="#9FA2B4"
+        {...modifyProps}
+      />
+    </Svg>
+  );
+};
+
+export default memo(Close);
